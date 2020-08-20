@@ -37,12 +37,33 @@
 
 
 /* 12.9 정적 변수의 내부 연결 internal linkage */
-static int g_int;			// referencing declaration
+//static int g_int;			// referencing declaration
+//
+//void fun_second()
+//{
+//	g_int += 1;
+//	printf("g_int in fun_second() %d %p\n", g_int, &g_int);
+//}
+
+
+/* 12.11 함수의 저장 공간 분류*/
+extern int g_int;			// referencing declaration
+
+static void tool()
+{
+	//
+}
+
+static void fun_second();
 
 void fun_second()
 {
+	tool();
+
 	g_int += 1;
 	printf("g_int in fun_second() %d %p\n", g_int, &g_int);
 }
+
+
 
 

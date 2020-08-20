@@ -37,11 +37,24 @@
 	- File scope, external linkage, static storage duration
 	- Internal storage class
 */
-static int g_int = 123;				// defining declaration
+//static int g_int = 123;				// defining declaration
+//
+//void fun();
+//void fun_second();
+//void fun_third();
+
+
+/* 12.11 함수의 저장 공간 분류*/
+/*
+	Storage Classes and Functions
+	- Functions external (by default) or static
+	- A function declaration is assumed to be extern
+*/
+int g_int = 123;				// defining declaration
+// TODO: try static
 
 void fun();
 void fun_second();
-void fun_third();
 
 
 int main()
@@ -66,9 +79,14 @@ int main()
 
 
 	/* 12.9 정적 변수의 내부 연결 internal linkage */
+	//fun();
+	//fun_second();
+	//fun_third();
+
+
+	/* 12.11 함수의 저장 공간 분류*/
 	fun();
 	fun_second();
-	fun_third();
 
 	return 0;
 }
