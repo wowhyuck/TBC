@@ -10,9 +10,15 @@
 //
 //typedef struct avenger Item;
 
+/* 17.9 */
+//typedef struct
+//{
+//	int key;
+//} element;
+
+/* 17.10 */
 typedef struct
 {
-	int key;
+	int i;
+	int j;
 } element;
-
-

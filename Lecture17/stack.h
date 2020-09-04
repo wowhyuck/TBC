@@ -3,7 +3,7 @@
 #include "element.h"
 #include <stdbool.h>
 
-#define MAX_STACK_SIZE 5
+#define MAX_STACK_SIZE 100
 
 typedef struct stack
 {
